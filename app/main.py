@@ -1,5 +1,8 @@
 from fastapi import FastAPI, UploadFile
+from dotenv import load_dotenv
 from pipeline import process_image
+
+load_dotenv()
 
 app = FastAPI()
 
