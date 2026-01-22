@@ -14,10 +14,8 @@ def extract_text(image_path: str) -> str:
         gray, 0, 255,
         cv2.THRESH_BINARY + cv2.THRESH_OTSU
     )[1]
-
     text = pytesseract.image_to_string(
         Image.fromarray(thresh),
         config="--psm 6"
     )
-
     return text

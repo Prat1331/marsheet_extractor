@@ -1,7 +1,7 @@
 # pipeline.py
 import tempfile
-from ocr import extract_text
-from llm import extract_structured_data
+from app.ocr import extract_text
+from app.llm import extract_structured_data
 
 def process_image(uploaded_file):
     with tempfile.NamedTemporaryFile(delete=False) as temp:
