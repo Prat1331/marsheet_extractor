@@ -3,6 +3,7 @@ uvicorn[standard]
 python-dotenv
 google-generativeai
 opencv-python
-pytesseract
-Pillow
+pillow
+easyocr
 numpy<2
+python-multipart
